@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For Two Dogs</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2{font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+p {line-height: 2}
+.bgimg, .bgimg2 {
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.bgimg {background-image: url("./pictures/dog01.jpeg")}
+.bgimg2 {background-image: url("./pictures/dog03.jpeg")}
+</style>
+<link rel="icon" type="image/x-icon" href="./pictures/favicon.ico">
+</head>
+<body>
+
+<!-- Header / Home-->
+<header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-text-white w3-center">
+    <h1 class="w3-jumbo">乐乐 & Lucky</h1>
+    <h2>永远都在</h2>
+    <h2><b>2024.10.16</b></h2>
+  </div>
+</header>
+
+<!-- Navbar (sticky bottom) -->
+<div class="w3-bottom w3-hide-small">
+  <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+    <a href="#home" style="width:25%" class="w3-bar-item w3-button">Home</a>
+    <a href="#us" style="width:25%" class="w3-bar-item w3-button">乐乐 & Lucky</a>
+    <a href="#wedding" style="width:25%" class="w3-bar-item w3-button">怀念</a>
+    <!-- <a href="#rsvp" style="width:25%" class="w3-bar-item w3-button w3-hover-black">RSVP</a> -->
+  </div>
+</div>
+
+<!-- About / Jane And John -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="us">
+  <div class="w3-content">
+    <h1 class="w3-center w3-text-grey"><b>乐乐 & Lucky</b></h1>
+    <img class="w3-round w3-grayscale-min" src="./pictures/dog05.jpeg" style="width:100%;margin:32px 0">
+    <p><i>在这一刻，我们怀念那两只小狗，它们曾带来无尽的温暖与陪伴，
+        曾让我们见证生命的纯真与美好。
+        尽管它们已离我们而去，但它们留下的点滴回忆将永远留在我们的心中，成为无法替代的温暖与安慰。愿它们在另一个世界，依旧幸福相伴。</i>
+    </p><br>
+    <img class="w3-round w3-grayscale-min" src="./pictures/dog02.jpeg" style="width:100%;margin:32px 0">
+    <p style="text-align: center;"><i>乐乐——机灵淘气，因缘而聚</i>
+    </p><br>
+    <img class="w3-round w3-grayscale-min" src="./pictures/dog04.jpeg" style="width:100%;margin:32px 0">
+    <p style="text-align: center;"><i>Lucky——虽然迟缓，依旧温暖</i>
+    </p><br>
+    <p class="w3-center"><a href="#wedding" class="w3-button w3-black w3-round w3-padding-large w3-large">我们怀念的狗狗</a></p>
+  </div>
+</div>
+
+<!-- Background photo -->
+<div class="w3-display-container bgimg2">
+  <div class="w3-display-middle w3-text-white w3-center">
+    <h1 class="w3-jumbo">You Are Right Here</h1><br>
+    <h2>Always...</h2>
+  </div>
+</div>
+
+<!-- Wedding information -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="wedding">
+  <div class="w3-content">
+    <h1 class="w3-text-grey"><b>我们怀念的</b></h1>
+    <img class="w3-round-large w3-grayscale-min" src="./pictures/dog06.jpeg" style="width:100%;margin:64px 0">
+    <div class="w3-row">
+      <div class="w3-half">
+        <h2>乐乐</h2>
+        <p>Shenzhen City, Guangdong Province</p>
+        <p>10.16</p>
+      </div>
+      <div class="w3-half">
+        <h2>Lucky</h2>
+        <p>China</p>
+        <p>2024</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RSVP section -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="rsvp">
+  <h1>HOPE YOU CAN BE HAPPY AND LUCKY!</h1>
+  <p class="w3-large">You are always by our side</p>
+  <!-- <p class="w3-xlarge">
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">RSVP</button>
+  </p>
+</div> -->
+
+<!-- RSVP modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+    <div class="w3-container w3-white w3-center">
+      <h1 class="w3-wide">CAN YOU COME?</h1>
+      <p>We really hope you can make it.</p>
+      <form>
+        <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
+      </form>
+      <p><i>Sincerely, John & Jane</i></p>
+      <div class="w3-row">
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-green">Going</button>
+        </div>
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-red">Can't come</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Created by Eason Lee</p>
+</footer>
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
+
+</body>
+</html>
